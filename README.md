@@ -21,3 +21,12 @@ The project uses a `.env` file for local secrets. To get started:
 ### 3. Installation
 ```powershell
 pip install -r requirements.txt
+uvicorn app.main:app --reload
+```
+### 4. Running with Docker (The "One-Click" Method)
+This project is fully containerized for professional deployment. To run the entire environment (including secret management and live-reload volumes) with a single command:
+1. Build and Start:
+```powershell
+docker-compose up --build
+```
+2. Access: The Oracle will be live at: http://localhost:8000/
