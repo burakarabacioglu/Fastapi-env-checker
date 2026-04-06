@@ -9,7 +9,7 @@ load_dotenv()
 
 app = FastAPI(title="Environment Oracle")
 
-@app.get("/diagnostics")
+@app.get("/")
 def get_diagnostics():
     return {
         "timestamp": datetime.now().isoformat(),
